@@ -1,0 +1,243 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+body{
+    margin: 0;
+    line-height: 1.5;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body,
+input,
+textarea,
+button{
+    font-family: 'Raleway',sans-serif;
+    font-weight: 400;
+}
+.home-sec{
+    min-height: 100vh;
+    background-image: url('rs62020.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+} 
+.home-sec::before{
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+     background-color: #000000; 
+    opacity: 0.7;
+    z-index: -1;
+
+
+}
+.home-sec .shape01{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border: 2px solid white;
+    right: 5%;
+    top: 20%;
+    animation: ani01 2s linear infinite;
+
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.align-items{
+    align-items: center;
+}
+.adjust-nav{
+    justify-content: space-between;
+}
+@keyframes ani01{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+.header .brand-name{
+    color: blanchedalmond;
+    padding: 0 15px;
+
+}
+.header .brand-name a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+     font-weight: 900;
+    letter-spacing: 2px;
+    transition: all 0.8s ease;
+}
+.header .brand-name a:hover{
+    color:#e62e00;
+}
+
+.header .navigation{
+     /* background-color: gray;  */
+    padding: 0 15px;
+}
+.header .navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.header .navigation ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
+.header .navigation ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 25px 0;
+    display: block;
+    z-index: 99;
+    transition: all 1.0s ease;
+}
+.header .navigation ul li a:hover{
+    color:#e62e00;
+}
+.home-sec .row{
+    min-height: 100vh;
+
+}
+.home-sec .home-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+.home-sec .home-content h2{
+font-size: 20px;
+color: #ffffff;
+margin: 0;
+}
+.home-sec .home-content h3{
+    font-size: 60px;
+    margin: 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 10px;
+}
+.home-sec{}
+
+.logo {
+    animation: bounceIn 0.6s;
+    transform: rotate(0deg) scale(1) translateZ(0);
+    transition: all 0.4s cubic-bezier(.8,1.8,.75,.75);
+    cursor: pointer;
+    margin-left: 100px;
+  
+  }
+  .logo:hover {
+    transform: rotate(10deg) scale(1.1);
+  }
+
+  .home-sec .scroll-down{
+      position: absolute;
+      left: 50%;
+      bottom: 30px;
+      height: 30px;
+      width: 25px;
+      margin: left -15px; ;
+
+
+  }
+  .home-sec .scroll-down img{
+      width: 25px;
+      display: block;
+  }
+
+  /*service section*/
+
+  .service-sec{
+     padding: 80px 0 80px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .service-item-inner{
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+
+  #rs4{
+      margin-left: 280px;
+  }
+  #rs6{
+    margin-left: 270px;
+  }
+#rsq8{
+    margin-left: 270px;
+}
+#price{
+    margin-left: 680px;
+    margin-bottom: 100px;
+}
+.service-sec .service-item-inner img{
+    display: block;
+    filter: grayscale(60%);
+    transition: all 0.5s ease;
+}
+.service-sec .service-item-inner img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+.btn-cart1{
+    background-color: white;
+    color: black;
+    border-color: black;
+    border-radius: 0%;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+
+}
+.btn-cart1:hover{
+    background-color: grey;
+}
+.btn-cart{
+    background-color: white;
+    color: black;
+    border-color: black;
+    border-radius: 0%;
+    
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+
+}
+#adjust-btn{
+    /* margin-top: -125px;
+    margin-bottom: 37px; */
+
+}
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navigation" style="text-align: center;">
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="contact.html">Contact us</a></li>
+                <li><a href="cart.html">Store</a></li>
+            </ul>
+           </nav> 
+
+    </header> 
+    <section>
+    <div class="container">
+        <div style="text-align:center">
+        <h1>Contact us</h1>
+        </div> 
+        <div class="row">
+            <div class="column">
+                <img src="vlv.jpg" class="img"> 
+            </div>
+       <div class="column">
+           <form action="/duuo.js">
+            <label for="fname" style="color:white" >FIRST NAME</label>
+            <input type ="text" id="fname" name="firstname" placeholder="Your name...">
+            <label for="lname"style="color:honeydew">LAST NAME</label>
+            <input type ="text" id="lname" name="lastname" placeholder="Your last name...">
+            <label for="subject" style="color:whitesmoke" >SUBJECT</label>
+            <textarea id="subject" name="subject" placeholder="Tell us..." style="height:170px"></textarea>
+            <input id="submit-btn" type="submit" value="SUBMIT"  >
+            </form> 
+            </div>
+        </div>
+     </div>
+</section>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#submit-btn').on('click',function(){
+            alert('Submitted Succesfully')
+        })
+    })
+</script>
+</html>

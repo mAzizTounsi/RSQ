@@ -1,0 +1,105 @@
+*{
+    box-sizing : border-box;
+    background-image: url('vlv.jpg');
+} 
+select {
+    width: 100%;
+    padding: 12px;
+    border :1px solid #ccc; 
+    margin-top :6px;
+    margin-bottom : 16px; 
+    resize:vertical;   
+} 
+input[type=submit] {
+    background-color :white; 
+    color: white;
+    padding: 12px ;
+    border: 1px white solid;
+    cursor: pointer;  
+  } 
+  input[type=submit]:hover {
+    background-color: white;
+  }
+  .container {
+    border-radius: 5px;
+    background-color: #F2F2F2;
+    padding: 10px;
+  } 
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  } 
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }  
+      @media screen and (max-width: 600px) {
+        .column, input[type=submit] {
+          width: 100%;
+          margin-top: 0;
+        }
+      }  
+      .img{
+        width: 60% ; 
+        height: 10% ;
+      } 
+h1{
+    color : white ; 
+    font-size: 3em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+p{
+    color :white ; 
+} 
+input[type=text]{
+    width: 100%;
+    padding: 12px;px;
+    border :1px solid #ccc; 
+    margin-top :6px;
+    margin-bottom : 16px; 
+    resize:vertical; 
+} 
+input[type=text]:focus{
+    background-color: lightblue;
+} 
+textarea {
+    width: 100%;
+    padding: 12px;px;
+    border :1px solid #ccc; 
+    margin-top :6px;
+    margin-bottom : 16px; 
+    resize:vertical; 
+    color : white ; 
+}
+
+
+.header .navigation{
+    /* background-color: gray;  */
+   padding: 0 15px;
+}
+.header .navigation ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+.header .navigation ul li {
+   display: inline-block;
+   margin-left: 30px;
+}
+.header .navigation ul li a {
+   text-decoration: none;
+   font-size: 25px;
+   font-weight: 600;
+   color: #ffffff;
+   padding: 25px 0;
+   display: block;
+   z-index: 99;
+   transition: all 1.0s ease;
+}
+.header .navigation ul li a:hover{
+   color:#e62e00;
+}
